@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="../assets/css/donate.css">
+      <link rel="stylesheet" href="../assets/css/styles.css">
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+      <!-- Tailwind CDN -->
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ananayy.ico">
+      <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ananayy.ico">
+
+      <!-- Title -->
+      <title>Ananay Hotels | Colabora con Nosotros</title>
+   </head>
+   <body>
+      <!-- Navigation Bar -->
+      <header class="header" id="header" style="font-family: 'Inter'; background: rgb(255, 255, 255);">
+         <nav class="nav container">
+            <b><a href="../index.html" class="nav__logo" style="font-family: 'Product Sans Bold'; letter-spacing: -.5px; font-size: 1.5rem;"> Ananay Hotels </a></b>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="../index.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Inicio</a> 
+                  </li>
+                  <li class="nav__item">
+                     <a href="../index.html#about" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Acerca De</a> 
+                  </li>
+                  <li class="nav__item">
+                     <a href="map.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Villa Barranco</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="covid.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">COVID</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="donate.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Colabora con Nosotros</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="membership.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Membresía</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="dining.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Sostenible</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="news.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Novedades</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class='bx bx-grid-alt'></i>
+            </div>
+            <a href="login.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Únete a Nosotros</a>
+         </nav>
+      </header>
+
+      <!-- Banner Section -->
+      <section class="banner" style="height: 85vh;">
+         <div class="content">
+            <div class="title">Colabora con Nosotros</div>
+            <div class="top-subtitle subtitle">Ananay Hotels</div>
+         </div>
+      </section>
+
+      <h1 class="sec-head" style="text-align: center; margin-top: 100px;">¿Por qué deberías colaborar?</h1><br>
+      <div style="text-align: center; font-family: Inter; font-size: 18px; width: 60%; margin: auto; margin-top: 10px;">Nuestra organización apoya financiera y emocionalmente una variedad de causas sociales, como el apoyo a organizaciones benéficas y organizaciones locales con sus campañas ambientales y éticas. ayudar al crecimiento de más árboles y reducir la deforestación. Reducir los desechos, mejorar la eficiencia energética y preservar y reciclar los recursos son formas de reducir nuestro efecto ambiental. ayudar a los pobres proporcionándoles alojamiento, alimentos y otras necesidades.
+      </div>
+      <div class="card-form">
+         <form class="deposit">
+            <div class="form-indicator"></div>
+            <div class="form-body">
+               <div class="row-d">
+                  <h1 style="margin-bottom:0px;">
+                  Donar Fondos</h2>
+               </div>
+               <div class="row-d" >
+                  <p style="margin-top:0px;" id ="donation">$68,789 donados hasta ahora.</p>
+               </div>
+               <div class="row-d">
+                  <div class="form-block">
+                     <div class="button" id="1" onclick="setValue(this)">$5</div>
+                     <div class="button" id="2" onclick="setValue(this)">$10</div>
+                     <div class="button" id="3" onclick="setValue(this)">$20</div>
+                     <div class="button" id="4" onclick="setValue(this)">$40</div>
+                     <div class="button" id="5" onclick="setValue(this)">$100</div>
+                     <div class="button" id="6" onclick="setValue(this)">$250</div>
+                     <div class="button" id="7" onclick="setValue(this)">$1000</div>
+                  </div>
+               </div>
+               <div class="row-d">
+                  <input type="text" id="cc" maxlength="16" placeholder="Número de Tarjeta de Crédito">
+               </div>
+               <div class="row-d">
+                  <input type="text" id="name" placeholder="Nombre en la Tarjeta">
+                  <input type="text" id ="date" maxlength="5" placeholder="MM/YY">
+                  <input type="text" id ="cvc" maxlength="4" placeholder="CVC">
+               </div>
+            </div>
+            <div class="form-footer">
+               <div class="button button__header" style="text-align: center; cursor: pointer;">Donar Fondos</div>
+            </div>
+         </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer-dark" style="font-family: Inter;">
+         <footer>
+            <div class="bscontainer">
+               <div class="bsrow">
+                  <div class="bscol-md-2 item">
+                     <h3>Páginas</h3>
+                     <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="map.html">Villa Barranco</a></li>
+                        <li><a href="login.html">Inicia Sesión</a></li>
+                        <li><a href="book.html">Reserva Ahora</a></li>
+                     </ul>
+                  </div>
+                  <div class="bscol-md-2 item">
+                     <h3>Conoce Más</h3>
+                     <ul>
+                        <li><a href="membership.html">Membresía</a></li>
+                        <li><a href="team.html">Información General</a></li>
+                        <li><a href="news.html">Novedades</a></li>
+                     </ul>
+                  </div>
+                  <div class="bscol-md-2 item">
+                     <h3>Otros Detalles</h3>
+                     <ul>
+                        <li><a href="#">Politica de Protección de Datos</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Libro de Reclamaciones</a></li>
+                        <li><a href="../index.html#contact">Contáctanos</a></li>
+                     </ul>
+                  </div>
+                  <div class="bscol-md-6 item text">
+                     <h3>Ananay Hotels</h3>
+                     <p>Ananay Hotels cuenta con todo lo necesario para satisfacer cualquier deseo. No importa si busca una actividad familiar, una experiencia histórica o, sencillamente, unos momentos de bienestar.</p><br>
+                     <a href="mailto:vbreservas@ananayhotels.com">vbreservas@ananayhotels.com</a><br>
+                     <a href="tel:+51921482886">+51 921 482 886</a>
+                  </div>
+                  <div class="social_links">
+                     <a href="https://www.instagram.com/ananayhotels">
+                     <span class="fa-stack fa-lg ig combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.facebook.com/ananayhotels/">
+                     <span class="fa-stack fa-lg fb combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.youtube.com/channel/UCyAm1Fu4rjiN0qoR4N45x_g">
+                     <span class="fa-stack fa-lg yt combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-youtube-play fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://mobile.twitter.com/ananayhotels">
+                     <span class="fa-stack fa-lg tw combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://pe.linkedin.com/company/ananayhotels">
+                     <span class="fa-stack fa-lg tw combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.pinterest.com/ananayhotels/">
+                     <span class="fa-stack fa-lg tw combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-pinterest fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                  </div>
+               </div>
+               <p class="copyright">Ananay Hotels © 2023</p>
+            </div>
+         </footer>
+      </div>
+     <!-- JS -->
+     <script src="../assets/js/main.js"></script>
+  </body>
+</html>
